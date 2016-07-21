@@ -18,6 +18,7 @@ class Battle < Sinatra::Base
 
     @player_1 = session[:player_1]
     @player_2 = session[:player_2]
+    @player_2_HP = 100
     erb(:play)
   end
 
