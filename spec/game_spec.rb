@@ -21,10 +21,19 @@ describe Game do
     it "should return player2"do
       expect(game.player_2).to eq samed
     end
-
-
   end
 
+  describe "#current_turn" do
+    it 'starts as player 1' do
+      expect(game.current_turn).to eq prashant
+    end
+  end
 
+  describe '#switch_turns' do
+    it 'switches turnes' do
+      game.switch_turns
+      expect(game.current_turn).to eq samed
+    end
+  end
 
 end

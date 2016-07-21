@@ -12,5 +12,8 @@ feature "Battle" do
     click_link "OK"
     expect(page).not_to have_content("Samed: 60HP")
     expect(page).to have_content("Samed: 50HP")
+    expect(page).to have_content("Bart: 60HP")
   end
+
+
 end
